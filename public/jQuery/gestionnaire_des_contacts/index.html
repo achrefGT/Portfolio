@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="gestContact.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Gestionnaire de contacts</title>
+    
+</head>
+
+<body>
+    <header>
+        <h1 id="titre">Gestionnaire de contacts</h1>
+    </header>
+    
+    <section>
+        <article id="formContacts">
+            <header>
+                <h1>Ajout d'un contact</h1>
+            </header>
+            <details>
+                <summary>
+                    Cliquer pour voir le formulaire.
+                </summary>
+                <form method="post" action="#">
+                    <fieldset>
+                        <legend>Nouveau contact</legend>
+                        <label>
+                            <span>Nom :</span>
+                            <input type="text" id="nom" name="nom" required maxlength="32" pattern="^[^%$&]+$">
+                        </label>
+                        <label>
+                            <span>Prénom :</span>
+                            <input type="text" id="prenom" name="prenom" required maxlength="32" pattern="^[^%$&]+$">
+                        </label>
+                        <label>
+                            <span>Téléphone :</span>
+                            <input type="text" id="telephone" name="telephone" required maxlength="32" pattern="^[^%$&]+$" placeholder="+216 99 99 99">
+
+                        </label>
+
+                        <label>
+                            <span>Email :</span>
+                            <input type="email" id="email" name="email" pattern="[a-z0-9._%+\-]+@enit.utm.tn$">
+                        </label>
+                        <label>
+                            <span>Date de naissance :</span>
+                            <input type="date" id="dateNaissance" name="dateNaissance" onchange="verifdate()">
+                        </label>
+                        <label>
+                            <span>Nombre d'enfants :</span>
+                            0 <input type="range" min="0" max="5" id="rangeInput"> 5
+                        </label>
+                    </fieldset>
+                    <button id="Ajouter-client" type="submit">OK</button>
+                </form>
+            </details>
+        </article>
+        <article id="contacts">
+            <header>
+                <h1>Liste des contacts</h1>
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Prénom</th>
+                        <th>Nom</th>
+                        <th>Téléphone</th>
+                        <th>Email</th>
+                        <th>Date de naissance</th>
+                        <th>Nombre enfants</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr></tr>
+                </tbody>
+            </table>
+            <img src="poubelle.png" id="poubelle">
+        </article>
+    </section>
+
+  
+    <footer>Enit - Formation HTML5 </footer>
+</body>

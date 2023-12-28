@@ -1,0 +1,90 @@
+<!doctype html> 
+<html>
+    <head>
+        <link rel="stylesheet" href="style3-1.css">
+        <link rel="icon" href="../img/icon.png" type="image/x-icon">
+
+        <script>
+            var screen=document.getElementById("screen")
+            function display(frm,c){
+                frm.screen.value+=c;
+            
+            }
+            function clear(frm){
+                frm.screen.value=""
+            }
+            function calculer(frm){
+                frm.screen.value=eval(frm.screen.value);
+            }
+
+        </script>
+        
+
+    </head>
+    <body>
+        <form> 
+            <table>
+
+           <tr class="titre"><td colspan="6"><h1><u>calculatrice</u></h1></td></tr>
+            <tr><td></td><td colspan="4"><input type="text" id="screen"></td><td></td></tr>
+            <tr>
+                <td width="5px"></td>
+                
+                <td><input type="button" value="1" class="b" onclick="display(this.form,'1')"></td>
+                <td><input type="button" value="2" class="b" onclick="display(this.form,'2')"></td>
+                <td><input type="button" value="3" class="b" onclick="display(this.form,'3')"></td>
+                <td><input type="button" value="/" class="b" onclick="display(this.form,'/')"></td>
+            
+                <td widht="5px"></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                
+                <td><input type="button" value="4" class="b" onclick="display(this.form,'4')"></td>
+                <td><input type="button" value="5" class="b" onclick="display(this.form,'5')"></td>
+                <td><input type="button" value="6" class="b" onclick="display(this.form,'6')"></td>
+                <td><input type="button" value="*" class="b" onclick="display(this.form,'*')"></td>
+            
+                <td></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                
+                <td><input type="button" value="7"  class="b" onclick="display(this.form,'7')"></td>
+                <td><input type="button" value="8"  class="b" onclick="display(this.form,'8')"></td>
+                <td><input type="button" value="9"  class="b" onclick="display(this.form,'9')"></td>
+                <td><input type="button" value="-"  class="b" onclick="display(this.form,'-')"></td>
+                
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td></td>
+                
+                <td><input type="button" value="<-" class="b" onclick="display(this.form,'<-')"></td>
+                <td><input type="button" value="0"  class="b" onclick="display(this.form,'0')"></td>
+                <td><input type="button" value="+"  class="b" onclick="display(this.form,'+')"></td>
+                <td> <input type="button" value="=" class="b" onclick="calculer(this.form)"></td>
+                
+                <td></td>
+
+            </tr>
+            <tr>
+                <td></td>
+                
+                <td><input type="button" value="CE"  class="b" onclick="clear(this.form)"></td>
+                <td><input type="button" value="+|-"  class="b" onclick="display(this.form,'+|-')"></td>
+                <td><input type="button" value=","  class="b" onclick="display(this.form,',')"></td>
+                <td><input type="button" value="%"  class="b" onclick="display(this.form,'%')"></td>
+                
+                <td></td>
+
+            </tr>
+                
+            
+        </table>
+    </form>
+    </body>
+</html>

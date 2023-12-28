@@ -1,0 +1,29 @@
+<!doctype html> 
+<html>
+    <head>
+        <link rel="icon" href="../img/icon.png" type="image/x-icon">
+
+       <script>
+        function f(dessin){
+            document.getElementById("dessin").src = "lune.png"; 
+        }
+        function g(){
+            location.reload()
+        }
+         </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td><input type="image" src="soleil.png" id="dessin"  onclick="f(dessin)"></td>
+                <td><input type="button" value="restart" onclick="g()"></td> 
+            </tr>
+
+        </table>
+
+        
+        
+        
+
+    </body>
+</html>

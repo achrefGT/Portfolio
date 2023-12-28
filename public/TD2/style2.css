@@ -1,0 +1,96 @@
+ /* Les balises s'affichant en "block" (bloc) : elles prennent toute la largeur disponible et s'affichent avec un saut de ligne avant et après.*/
+
+footer, header, menu, nav, section {
+	display: block;
+}
+
+
+
+h2 {
+    font-size:2em;
+    
+}
+
+ul
+{
+	
+	list-style-image:url(./Images/bullet.gif);
+	
+}
+p {
+font-size:11px;
+margin:5px 0 5px;
+text-align:justify;
+}
+
+
+a:link, a:visited {
+color:#319FFF;
+text-decoration:none;
+}
+
+a:hover {
+color:#726F61;
+text-decoration:none;
+}
+header
+{
+	-moz-transform:rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	-o-transform:rotate(-90deg);
+	-webkit-transform:rotate(-90deg);
+	color:gray;
+	display:block;
+	height:380px;
+	left:30px;
+	position:fixed;
+	text-align:right;
+	top:40px;
+	z-index:-1;
+    font-size: 1em;
+     font-weight: bold;
+	}
+
+body { 
+    font-family:'Coustard', sans-serif;
+	margin:auto;
+	width:960px;
+    line-height:22px;
+    padding:20px 0 0;
+}
+html
+{
+	background-color:#b4b4b4;
+	background-image: linear-gradient(bottom, rgb(180,180,180) 0%, rgb(214,204,255) 52%, rgb(240,235,255) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(180,180,180) 0%, rgb(214,204,255) 52%, rgb(240,235,255) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(180,180,180) 0%, rgb(214,204,255) 52%, rgb(240,235,255) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(180,180,180) 0%, rgb(214,204,255) 52%, rgb(240,235,255) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(180,180,180) 0%, rgb(214,204,255) 52%, rgb(240,235,255) 100%);
+	background-repeat:no-repeat;
+	height:100%
+}
+
+
+nav {
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+  color: #4D4D4D;
+    font-size: 13px;
+    font-weight: bold;	
+}
+
+article {
+width:700px;
+float:left;
+}
+
+
+footer 
+{ 
+position: relative;
+clear:both;
+padding-top: 10px;
+text-align:center;
+color: #76797c; 
+font-size:12px;
+font-family: Arial;}

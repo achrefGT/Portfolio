@@ -1,0 +1,110 @@
+
+
+
+
+
+
+
+Salut madame,
+je vais faire la demo puis expliquer le code ici vu mon probleme technique avec le micro.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Commencent par le fichier HTML, 
+
+j'ai d'abord effectué les importations nécessaires, puis j'ai ajouté les champs de saisie pour le formulaire. J'ai précisé les contraintes de saisie en utilisant des expressions régulières avec l'attribut 'pattern', ainsi que 'maxlength' pour la longueur maximale, et 'required' pour que le champ soit obligatoire. Pour la date de naissance, elle doit être dans le passé, sinon la fonction 'verifdate' est déclenchée.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pour le fichier JavaScript, 
+
+j'ai implémenté la fonction 'verifdate' en dehors de la fonction '$(document).ready(function()', car j'ai utilisé l'attribut 'onchange' dans la balise 'input'. Si la date donnée n'est pas dans le passé, une alerte s'affiche et la valeur de la date de naissance devient vide jusqu'à ce qu'une date valide soit saisie. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lorsque la page se charge, 
+
+la variable 'contacts' récupère les 'contacts' dans le localStorage en utilisant 'getItem'. J'ai également implémenté des fonctions telles que 'enregistreContacts' pour stocker les contacts dans le localStorage via 'setItem' et 'JSON.stringify(contacts)' pour que 'contacts' soit au format JSON. De même, la fonction 'construitTable' va reconstruire et afficher le tableau des contacts en parcourant le tableau de contacts. Enfin, la fonction 'supprimeContact' prend la position du contact dans le tableau en utilisant l'ID de l'image 'delete' attachée au contact (ID de l'image = 'del' + la position dans le localStorage), le supprime, puis met à jour le localStorage en appelant la fonction 'enregistreContacts' et en reconstruisant le tableau des contacts avec la fonction 'construitTable'.
+
+Lorsque le formulaire est soumis (en cliquant sur le bouton 'ok'), un objet 'contact' est créé pour stocker les données du formulaire, puis est ajouté au tableau des contacts. Ensuite, les fonctions 'enregistreContacts' et 'construitTable' sont appelées.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+En ce qui concerne la partie implémentant les fonctionnalités de glisser-déposer, lorsqu'un événement de glisser-déposer commence ('dragstart') pour les éléments avec la classe 'drag-icon', l'index de l'élément le plus proche de type 'tr' est extrait et stocké dans une variable 'index'. Ensuite, les données sont définies dans l'événement de transfert de données original, avec le type de données "text/plain" et la valeur de l'index.
+
+Lorsqu'un élément est lâché sur l'icône poubelle (événement 'drop'), l'événement par défaut est empêché (ce qui empêche le comportement par défaut du navigateur). Ensuite, la variable 'index' est extraite des données de l'événement de transfert de données original, avec le type de données "text". Enfin, la fonction 'supprimeContact' est appelée avec l'index en tant que paramètre, suivi de la lecture du son 'poubelleSound.mp3' après la suppression. J'ai également empêché le comportement par défaut du navigateur lors d'un événement 'dragover'."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

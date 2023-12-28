@@ -1,0 +1,29 @@
+h2
+{
+	font-size:2em;
+}
+ul
+{
+	list-style-image:url(bullet.gif);
+}
+p
+{
+	text-aligne:justify;
+}
+body{
+	background-color:#FFB9B9;
+}
+a:link{
+	color:blue;
+}
+a:visited{
+	color:blueviolet;
+}
+a:hover{
+	color:red;
+}
+a:active{
+	color:green;
+}
+
+

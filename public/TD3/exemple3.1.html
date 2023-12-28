@@ -1,0 +1,17 @@
+<!doctype html> <head>    <link rel="icon" href="../img/icon.png" type="image/x-icon">
+</head>
+<BODY> 
+<SCRIPT> 
+var date = new Date(); 
+//déclaration d'une variable de type Date 
+//la variable date contient la date du jour 
+var mois = date.getMonth() + 1; 
+//la variable mois contient le N° du mois (le résultat de la méthode 
+//getMonth() appliquée à l'objet date, donne un nombre de 0 à 11) 
+var jour = date.getDate() ; 
+var annee = date.getFullYear(); 
+document.write( "Date de ce jour : " + jour + " / "+ mois + " /" + annee, "<BR />"); 
+document.write( "Heure ", date.getHours(), " : ",date.getMinutes()," : ", date.getSeconds() ); 
+</SCRIPT> 
+</BODY> 
+</HTML> 

@@ -1,0 +1,39 @@
+<html><head>    <link rel="icon" href="../img/icon.png" type="image/x-icon">
+</head> 
+<body>
+    <form>
+        Donnez note_1 : <input type="text" name="note1"> 
+        <br>
+        Donnez note_2 : <input type="text" name="note2"> 
+        <br>
+        Donnez note_3 : <input type="text" name="note3"> 
+        <br>
+        Donnez coef_1 : <input type="text" name="coef1"> 
+        <br>
+        Donnez coef_2 : <input type="text" name="coef2"> 
+        <br>
+        Donnez coef_3 : <input type="text" name="coef3"> 
+        <br>
+        <input type="button" value="calculer" onclick="moyenne(this.form)"> 
+        </form>
+        <script>
+            function moyenne(frm) {
+                var n1=frm.note1.value;
+                var n2=frm.note2.value;
+                var n3=frm.note3.value;
+                var c1=frm.coef1.value;
+                var c2=frm.coef2.value;
+                var c3=frm.coef3.value;
+                var moy= (parseInt(n1) * parseInt(c1) + parseInt(n2) * parseInt(c2) + parseInt(n3) * parseInt(c3))/(parseInt(c1)+parseInt(c2)+parseInt(c3))
+                alert(moy)
+    
+            }
+                
+    
+           
+        </script>
+    
+
+
+
+</body></html>
