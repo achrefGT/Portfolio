@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // Middleware pour parser le
 app.use(express.static(path.join(__dirname, 'public'))); // Middleware pour servir les fichiers statiques
 
 // Connexion à la base de données MongoDB à l'aide de Mongoose
-mongoose.connect('mongodb+srv://achref:achref2001@cluster0.ikmoovc.mongodb.net/portfolioDB?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://*****:******@cluster0.ikmoovc.mongodb.net/portfolioDB?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log('Connexion à MongoDB réussie !'))
